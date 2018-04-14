@@ -3,10 +3,11 @@
 int main() {
 	int i;
 	char entrada[6];
-	char saida[51]="";
+	char saida[51];
 	printf("Digite uma sequencia de 5 caracteres: ");
 	scanf(" %5[^\n]",&entrada);
 	for(i=0;i<10;i++)
-		strcpy(saida+i*5,entrada); //Atenção!!
+	strcpy(saida+i*5,entrada); //Aten¸c~ao!!
+	saida[50] = '\0';
 	printf("%s\n",saida);
 }
